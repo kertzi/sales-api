@@ -1,0 +1,18 @@
+type Query {
+    helloWorld: String,
+    links: [Link]
+}
+
+type Mutation {
+    post(url: String, description: String!): Link
+}
+
+type Subscription {
+    _empty: String
+}
+
+type Link {
+    id: ID!
+    description: String!
+    url: String!
+}
